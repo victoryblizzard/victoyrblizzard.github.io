@@ -1,11 +1,242 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-<meta charset="UTF-8"> 
-<title>My First Website</title> 
-</head> 
-<body> 
-<h1>Hello, this is my website!</h1> 
-<p>這是我用 GitHub Pages 架設的免費網站。</p> 
-</body> 
-</html> 
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ExerciseIQ | 美式選擇權履約智慧平台</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #0f172a;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #111827, #1e293b);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      color: #38bdf8;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      max-width: 800px;
+      margin: auto;
+      color: #cbd5e1;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 28px;
+      background-color: #38bdf8;
+      color: black;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background-color: #0ea5e9;
+    }
+
+    section {
+      padding: 70px 10%;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #38bdf8;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background-color: #1e293b;
+      padding: 25px;
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background-color: #334155;
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #7dd3fc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #111827;
+      color: #94a3b8;
+    }
+
+    .highlight {
+      color: #38bdf8;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>ExerciseIQ</h1>
+
+    <p>
+      AI-powered American Option Exercise Intelligence
+      <br><br>
+      我們利用量化金融與即時市場分析，
+      幫助投資人判斷美式選擇權的最佳履約時機。
+    </p>
+
+    <a href="#solution" class="button">了解更多</a>
+  </header>
+
+  <section id="problem">
+    <h2 class="section-title">市場問題</h2>
+
+    <p>
+      大部分投資人知道如何買賣選擇權，
+      但幾乎沒有人真正知道：
+      <span class="highlight">「什麼時候該提前履約？」</span>
+    </p>
+
+    <div class="card-container">
+
+      <div class="card">
+        <h3>時間價值損失</h3>
+        <p>
+          投資人常因錯誤履約時機而失去隱藏價值。
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>缺乏分析工具</h3>
+        <p>
+          現有券商幾乎不提供專業履約建議。
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>決策過於直覺</h3>
+        <p>
+          多數履約決策來自情緒或簡單規則。
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="solution">
+    <h2 class="section-title">我們的解決方案</h2>
+
+    <div class="card-container">
+
+      <div class="card">
+        <h3>即時履約建議</h3>
+        <p>
+          分析市場價格、波動率與股利資訊，
+          即時生成最佳履約建議。
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>AI + Quant 模型</h3>
+        <p>
+          使用 American Option Pricing、
+          Optimal Stopping 與波動率模型。
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>情境分析</h3>
+        <p>
+          提供不同市場情境下的履約比較與風險分析。
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="business">
+    <h2 class="section-title">商業模式</h2>
+
+    <div class="card-container">
+
+      <div class="card">
+        <h3>訂閱制</h3>
+        <p>
+          提供散戶即時履約分析與通知服務。
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>API 授權</h3>
+        <p>
+          提供券商與金融科技平台履約分析 API。
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>機構服務</h3>
+        <p>
+          為做市商與衍生品團隊提供高階分析工具。
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="vision">
+    <h2 class="section-title">我們的願景</h2>
+
+    <p style="font-size:1.2rem;">
+      我們相信：
+    </p>
+
+    <br>
+
+    <p style="font-size:2rem; color:#7dd3fc;">
+      「美式選擇權最大的隱藏價值，
+      在於決定何時行動。」
+    </p>
+
+    <br>
+
+    <p style="font-size:1.1rem;">
+      ExerciseIQ 希望將履約時機，
+      從直覺判斷轉變為量化智慧。
+    </p>
+  </section>
+
+  <footer>
+    © 2026 ExerciseIQ | Built with GitHub Pages
+  </footer>
+
+</body>
+</html>
